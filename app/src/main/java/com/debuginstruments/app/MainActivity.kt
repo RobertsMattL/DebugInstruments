@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener, LocationListener 
         Configuration.getInstance().userAgentValue = packageName
 
         setContentView(R.layout.activity_main)
+        Log.d("MainActivity", "Test log: MainActivity created")
 
         mapView = findViewById(R.id.mapView)
         mapView.setTileSource(TileSourceFactory.USGS_SAT)
@@ -84,6 +85,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener, LocationListener 
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
 
         requestLocationUpdates()
+        Log.d("MainActivity", "Test log: onCreate completed successfully")
     }
 
     private fun requestLocationUpdates() {
