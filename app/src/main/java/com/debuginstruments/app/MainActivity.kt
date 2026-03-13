@@ -11,13 +11,10 @@ import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
 import android.os.Bundle
-<<<<<<< HEAD
 import android.util.Log
-=======
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
->>>>>>> b48507636e200eabbf17ff2c8f6331a233f74528
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import org.osmdroid.config.Configuration
@@ -60,11 +57,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener, LocationListener 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-<<<<<<< HEAD
-        Log.d("MainActivity", "onCreate called")
-=======
-        Log.d("MainActivity", "onCreate called - test log")
->>>>>>> 8e288fbd27663eb4d7f4e693b5033e7d9ccc7dcb
+        Log.d("MainActivity", "onCreate called - test log line")
 
         Configuration.getInstance().load(this, getSharedPreferences("osmdroid", MODE_PRIVATE))
         Configuration.getInstance().userAgentValue = packageName
