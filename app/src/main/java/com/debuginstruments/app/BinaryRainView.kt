@@ -38,7 +38,7 @@ class BinaryRainView @JvmOverloads constructor(
     private data class Column(
         val x: Float,
         var headY: Float,
-        val speed: Float,
+        var speed: Float,
         val chars: MutableList<Char> = mutableListOf(),
         val startDelay: Int
     )
@@ -46,8 +46,7 @@ class BinaryRainView @JvmOverloads constructor(
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         val width = MeasureSpec.getSize(widthMeasureSpec)
         val height = MeasureSpec.getSize(heightMeasureSpec)
-        val size = minOf(width, height)
-        setMeasuredDimension(size, size)
+        setMeasuredDimension(width, height)
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
@@ -98,7 +97,7 @@ class BinaryRainView @JvmOverloads constructor(
             if (col.headY > height + charHeight * 20) {
                 col.headY = -Random.nextFloat() * height * 0.5f
                 col.chars.clear()
-                col.speed.plus(Random.nextFloat())
+                col.speed = 2f + Random.nextFloat() * 6f
             }
         }
     }
