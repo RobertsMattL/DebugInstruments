@@ -9,5 +9,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d("MainActivity", "Test log: MainActivity created")
+        Log.d("MainActivity", "Test log: onCreate completed successfully")
     }
 }
