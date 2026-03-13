@@ -60,7 +60,11 @@ class MainActivity : AppCompatActivity(), SensorEventListener, LocationListener 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+<<<<<<< HEAD
         Log.d("MainActivity", "onCreate called")
+=======
+        Log.d("MainActivity", "onCreate called - test log")
+>>>>>>> 8e288fbd27663eb4d7f4e693b5033e7d9ccc7dcb
 
         Configuration.getInstance().load(this, getSharedPreferences("osmdroid", MODE_PRIVATE))
         Configuration.getInstance().userAgentValue = packageName
