@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**/*)",
+      "Edit(**/*)",
+      "Write(**/*)",
+      "NotebookEdit(**/*)",
+      "Bash(*)",
+      "WebFetch",
+      "WebSearch",
+      "Task"
+    ],
+    "deny": [
+      "Bash(./gradlew:*)",
+      "Bash(gradlew:*)",
+      "Bash(gradle:*)"
+    ]
+  }
+}
