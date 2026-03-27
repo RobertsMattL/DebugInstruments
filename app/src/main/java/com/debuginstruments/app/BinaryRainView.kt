@@ -17,13 +17,13 @@ class BinaryRainView @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.parseColor("#00FF41")
+        color = Color.parseColor("#C0C0C0")
         textSize = 28f
         typeface = android.graphics.Typeface.MONOSPACE
     }
 
     private val dimPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.parseColor("#005518")
+        color = Color.parseColor("#424242")
         textSize = 28f
         typeface = android.graphics.Typeface.MONOSPACE
     }
@@ -122,7 +122,7 @@ class BinaryRainView @JvmOverloads constructor(
                         paint.color = Color.WHITE
                         paint.alpha = 255
                         canvas.drawText(char.toString(), col.x, y, paint)
-                        paint.color = Color.parseColor("#00FF41")
+                        paint.color = Color.parseColor("#C0C0C0")
                     }
                     distFromHead < 3 -> {
                         paint.alpha = 255

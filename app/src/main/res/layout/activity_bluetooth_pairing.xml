@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Scanning..."
-            android:textColor="#00FF41"
+            android:textColor="@color/gray_lighter"
             android:textSize="14sp"
             android:fontFamily="monospace" />
 
@@ -28,8 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="STOP"
-            android:textColor="#FF000000"
-            android:backgroundTint="#00FF41"
+            android:textColor="@color/gray_darkest"
+            android:backgroundTint="@color/gray_lighter"
             android:fontFamily="monospace" />
 
     </LinearLayout>
@@ -37,7 +37,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#1A00FF41" />
+        android:background="@color/gray_dark" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvDevices"

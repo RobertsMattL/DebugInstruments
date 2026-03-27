@@ -19,7 +19,7 @@
         android:layout_gravity="top|start"
         android:layout_marginStart="12dp"
         android:layout_marginTop="40dp"
-        android:background="#CC000000"
+        android:background="#CC1A1A1A"
         android:orientation="vertical"
         android:padding="12dp">
 
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="INSTRUMENTS"
-            android:textColor="#00FF41"
+            android:textColor="@color/gray_lighter"
             android:textSize="11sp"
             android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
             android:layout_height="1dp"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="6dp"
-            android:background="#4400FF41" />
+            android:background="@color/gray_dark" />
 
         <TextView
             android:id="@+id/tvAccelX"
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="ACC X:  0.00"
-            android:textColor="#00FF41"
+            android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
         <TextView
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="ACC Y:  0.00"
-            android:textColor="#00FF41"
+            android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
         <TextView
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="ACC Z:  0.00"
-            android:textColor="#00FF41"
+            android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
         <View
@@ -72,7 +72,7 @@
             android:layout_height="1dp"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="6dp"
-            android:background="#4400FF41" />
+            android:background="@color/gray_dark" />
 
         <TextView
             android:id="@+id/tvLat"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="LAT:    0.000000"
-            android:textColor="#00FF41"
+            android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
         <TextView
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="LNG:    0.000000"
-            android:textColor="#00FF41"
+            android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
         <TextView
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="ELEV:   0.0 m"
-            android:textColor="#00FF41"
+            android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
     </LinearLayout>
