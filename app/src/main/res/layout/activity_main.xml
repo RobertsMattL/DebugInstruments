@@ -40,12 +40,13 @@
             android:layout_marginBottom="6dp"
             android:background="@color/gray_dark" />
 
+        <!-- Accelerometer -->
         <TextView
             android:id="@+id/tvAccelX"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="ACC X:  0.00"
+            android:text="ACC X:    0.00 m/s²"
             android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
@@ -54,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="ACC Y:  0.00"
+            android:text="ACC Y:    0.00 m/s²"
             android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
@@ -63,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="ACC Z:  0.00"
+            android:text="ACC Z:    0.00 m/s²"
             android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
@@ -74,12 +75,136 @@
             android:layout_marginBottom="6dp"
             android:background="@color/gray_dark" />
 
+        <!-- Gyroscope -->
+        <TextView
+            android:id="@+id/tvGyroX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="GYRO X:   0.00 rad/s"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvGyroY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="GYRO Y:   0.00 rad/s"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvGyroZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="GYRO Z:   0.00 rad/s"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/gray_dark" />
+
+        <!-- Magnetometer -->
+        <TextView
+            android:id="@+id/tvMagX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="MAG X:     0.0 µT"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvMagY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="MAG Y:     0.0 µT"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvMagZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="MAG Z:     0.0 µT"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/gray_dark" />
+
+        <!-- Environmental Sensors -->
+        <TextView
+            android:id="@+id/tvLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="LIGHT:     0.0 lux"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="PRESS:     0.00 hPa"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="TEMP:      0.0 °C"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="HUMID:     0.0 %"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvProximity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="PROX:      0.0 cm"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/gray_dark" />
+
+        <!-- Location Data -->
         <TextView
             android:id="@+id/tvLat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="LAT:    0.000000"
+            android:text="LAT:    0.000000°"
             android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
@@ -88,7 +213,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="LNG:    0.000000"
+            android:text="LNG:    0.000000°"
             android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
@@ -97,7 +222,130 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="ELEV:   0.0 m"
+            android:text="ALT:       0.0 m"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="SPD:       -- m/s"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvBearing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="BEAR:      --°"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="ACC:       -- m"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/gray_dark" />
+
+        <!-- Battery Info -->
+        <TextView
+            android:id="@+id/tvBatteryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="BAT:    0.0% (--)"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvBatteryTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="B_TMP:   0.0 °C"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvBatteryVoltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="B_VOL:    0 mV"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/gray_dark" />
+
+        <!-- Network Info -->
+        <TextView
+            android:id="@+id/tvNetworkType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="NET: NONE"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvSignalStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="SIG: -- dBm"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/gray_dark" />
+
+        <!-- System Info -->
+        <TextView
+            android:id="@+id/tvMemoryUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="MEM: 0/0 MB"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvCpuUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="CPU:   0.0%"
+            android:textColor="@color/gray_lighter"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvStorageUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="STOR: 0/0 GB"
             android:textColor="@color/gray_lighter"
             android:textSize="11sp" />
 
